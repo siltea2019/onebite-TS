@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		// TS코드를 컴파일 해서 만들어지는 JS코드의 버전을 설정
+		"target": "ESNext", // ESNext : JS 최신 버전
+		"module": "ESNext", // JavaScript 모듈 설정
+		"outDir": "dist", // 컴파일 완료시 생성되는 파일 디렉토리
+		"strict": false, // 타입검사 모드 - true : 엄격하게 검사
+		"moduleDetection": "force", // 각 파일의 모듈 감지 옵션
+		"skipLibCheck": true // 타입 정의 파일의 타입검사 생략 옵션
+	},
+	"ts-node": {
+		// ts-node가 작동하는 모듈 시스템 설정
+		"esm": true // true : ESM 모듈 시스템으로 동작 
+	},
+	// tsc가 컴파일할 파일들의 범위와 위치 지정 : 특정 폴더 하위파일을 동시에 컴파일 할수 있도록 함
+	// >> tsc 입력시 자동으로 하위 폴더 및 파일을 컴파일 한다
+	"include": ["src"]
+}
