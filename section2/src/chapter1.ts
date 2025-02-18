@@ -7,9 +7,9 @@ let num5: number = Infinity;
 let num6: number = -Infinity;
 let num7: number = NaN;
 
-// num1 = 'hello'; // 문자타입 할당 X
-// num1.toUpperCase(); // 문자타입 메서드 사용 X
-// num1.toFixed(); // 숫자타입 메서드 사용 O
+num1 = 'hello'; // 문자타입 할당 X
+num1.toUpperCase(); // 문자타입 메서드 사용 X
+num1.toFixed(); // 숫자타입 메서드 사용 O
 
 // string
 let str1: string = 'hello';
@@ -17,16 +17,16 @@ let str2: string = 'hello';
 let str3: string = `hello`;
 let str4: string = `hello ${num1}`;
 
-// str1 = 123; // 숫자타입 할당 X
-// str1.toFixed(); // 숫자타입 메서드 사용 X
-// str1.toUpperCase(); // 문자타입 메서드 사용 O
+str1 = 123; // 숫자타입 할당 X
+str1.toFixed(); // 숫자타입 메서드 사용 X
+str1.toUpperCase(); // 문자타입 메서드 사용 O
 
 // boolean
 let bool1: boolean = true;
 let bool2: boolean = false;
 
-// bool1 = 123;
-// bool1 = 'boolean';
+bool1 = 123;
+bool1 = 'boolean';
 
 // null
 let null1: null = null;
@@ -35,7 +35,7 @@ let null1: null = null;
 let unde1: undefined = undefined;
 
 // "strictNullChecks": false
-// let numStrictNull: number = null;
+let numStrictNull: number = null;
 
 // 리터럴 타입 - 리터럴 : 값
 let numA: 10 = 10;
