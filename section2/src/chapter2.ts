@@ -18,12 +18,9 @@ let duoubleArr: number[][] = [
 // 튜플
 // 길이와 타입이 고정된 배열
 let tup1: [number, number] = [1, 2];
-tup1 = [1, 2, 3];
-tup1 = ['1', '2'];
 
 let tup2: [number, string, boolean] = [1, '2', true];
-tup2 = ['2', 1, false];
-tup2 = [1];
+
 
 // 배열 메서드도 자유롭게 사용이 가능하다
 tup1.push(1);
@@ -36,5 +33,4 @@ const users: [string, number][] = [
 	['왕건', 3],
 	['고주몽', 4],
 	['온조', 5],
-	[6, '단군왕검'],
 ];
