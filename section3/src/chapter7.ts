@@ -1,5 +1,4 @@
 // 타입좁히기 : 조건문 등을 이용해 넓은타입에서 좁은타입으로 타입을 상황에 따라 좁히는 방법
-
 type Person = {
 	name: string;
 	age: number;

@@ -27,7 +27,6 @@ animal = dog;
 // dog = animal;
 
 // 예시2
-
 type Book = {
 	name: string;
 	price: number;

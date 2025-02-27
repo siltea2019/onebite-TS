@@ -1,5 +1,4 @@
 // 타입 추론
-
 let a = 108;
 let b = 'hello';
 

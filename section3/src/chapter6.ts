@@ -1,5 +1,4 @@
 // 타입 단언
-
 type Person = {
 	name: string;
 	age: number;

@@ -1,5 +1,4 @@
 // 서로소 유니온 타입 : 교집합이 없는 타입들로만 만든 유니온 타입
-
 import { error } from 'console';
 
 type Admin = {
@@ -59,7 +58,6 @@ function login(user: User) {
 }
 
 // 복습 & 사례상황 : 비동기 작업의 결과를 처리하는 객체
-
 type LoadingTask = {
 	state: 'LOADING';
 };
