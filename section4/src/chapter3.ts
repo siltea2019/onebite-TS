@@ -18,6 +18,7 @@ function func(a: number, b?: number, c?: number) {
 	}
 }
 
+// func함수의 매개변수 개수 차이에 따른 오류를 알아보자
 // func();
 func(1);
 // func(1, 2);

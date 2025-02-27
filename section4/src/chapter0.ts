@@ -1,8 +1,8 @@
-// 함수 타입 정의
-
 // 함수를 설명하는 가장 좋은 방법
 // JS : 어떤 매개변수를 받고, 어떤 결과값을 반환하는지
 // TS : 어떤 [타입의] 매개변수를 받고, 어떤 [타입의] 결과값을 반환하는지
+
+// TS의 함수 타입정의
 function func(a: number, b: number) {
 	return a + b;
 }
@@ -27,8 +27,9 @@ function introduce(name = '김수민', age: number, tall?: number) {
 introduce('김수민', 34, 157);
 introduce('김수민', 34);
 
-// rest parameter 매개변수
-// rest parameter는 배열을 ....
+// rest parameter 매개변수 (= 나머지 매개변수)
+// rest parameter는 배열형태를 취하고 있으며 인수들을 담은 배열을 함수에 전달한다
+// 배열이기 때문에 forEach와 같은 메서드를 사용 가능하다
 // 갯수를 정해주고 싶다면 튜플 타입 이용
 function getSum(...rest: number[]) {
 	let sum = 0;
