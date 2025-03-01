@@ -19,8 +19,8 @@ interface Person {
 // 타입별칭과의 차이점
 // 인터페이스에서는 유니온 타입과 인터섹션 타입을 만들 수 없다.
 
-type Type1 = number | string
-type Type2 = number & string
+type Type1 = number | string;
+type Type2 = number & string;
 
 const person: Person = {
 	name: '김수민',
