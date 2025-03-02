@@ -1,5 +1,4 @@
 // 클래스
-
 let studentA = {
     name: "김수민",
     grade: "A+",
@@ -75,18 +74,19 @@ const studentDeveloper = new studentDeveloper ("김수민", "A+", 34, "JavaScrip
 console.log(studentDeveloper)
 studentDeveloper.programming()
 
-// 클래스 상속
+// 클래스 상속 및 복습
 class StudentUniversity extends Student{
-    class;
+    major;
 
-    constructor(name, grade, age, class) {
+    constructor(name, grade, age, major) {
         super(name, grade, age)
-        this.class = class;
+        this.major = major;
     }
 
-    class() {
-        console.log(`현재${this.class}에 재학중입니다.`)
+    getMajor() {
+        console.log(`현재${this.major}에 재학중입니다.`)
     }
 }
 
 const studentUniversity = new StudentUniversity ("김땡땡", "A0", 23, "Business Administration")
+studentUniversity.getMajor()
