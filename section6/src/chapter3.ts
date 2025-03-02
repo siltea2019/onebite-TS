@@ -7,9 +7,9 @@ interface CharacterInterface {
 
 class character implements CharacterInterface {
     constructor (
-        public name: string;
-        public movespeed: number;
-        private extra: string;
+        public name: string,
+        public movespeed: number,
+        private extra: string,
     ) {}
     move() {
         console.log(`${this.movespeed}로 이동합니다!`)
