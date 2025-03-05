@@ -8,9 +8,7 @@
 		// "strictNullChecks": false,
 		"moduleDetection": "force",
 		// 20버전 이상 업데이트 이후 타입검사 오류 발생시 아래 옵션 추가
-		"skipLibCheck": true,
-		// ["src"] 디렉터리 내 JS파일 허용
-		"allowJs": true
+		"skipLibCheck": true
 	},
 	"ts-node": {
 		"esm": true
