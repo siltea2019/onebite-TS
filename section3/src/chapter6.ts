@@ -24,7 +24,7 @@ let dog = {
 // 값 = A, 단언타입 = B 라 할때
 // A as B
 // A가 B의 슈퍼타입이거나
-// A가 B의 서브타입이어야 한다.
+// A가 B의 서브타입이어야 한다
 
 let num1 = 10 as never;
 let num2 = 10 as unknown;

@@ -14,7 +14,7 @@ let keypair2: KeyPair<boolean, string[]> = {
 	value: ['참', '거짓'],
 };
 
-// 인덱스 시그니쳐의 단독 사용
+// 인덱스 시그니처의 단독 사용
 interface NumberMap {
 	[key: string]: number;
 }
@@ -24,7 +24,7 @@ let numberMap1: NumberMap = {
 	key2: 12345,
 };
 
-// 제네릭 인터페이스 + 인덱스 시그니쳐
+// 제네릭 인터페이스 + 인덱스 시그니처
 interface Map<V> {
 	[key: string]: V;
 }

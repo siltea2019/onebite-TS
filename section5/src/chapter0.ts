@@ -6,18 +6,18 @@ interface Person {
 	age?: number;
 	sayHi: () => void;
 
-	// 호출 시그니쳐의 경우 기본적인 호출 시그니처와 다르게 적용된다.
-	// 단 인터페이스 안의 호출 시그니쳐의 경우, 소괄호 앞에 이름을 꼭 붙여야한다.
+	// 호출 시그니처의 경우 기본적인 호출 시그니처와 다르게 적용된다
+	// 단 인터페이스 안의 호출 시그니처의 경우, 소괄호 앞에 이름을 꼭 붙여야한다
 	// 이유: 타입 자체가 함수 타입이 되어버리기 때문
 	sayIntroduce(): void;
 	sayIntroduce(name: string, age: number): void;
-	// 함수 오버로딩을 구현하고 싶다면 호출 시그니처를 이용한다. (함수표션식 X)
+	// 함수 오버로딩을 구현하고 싶다면 호출 시그니처를 이용한다 (함수표션식 X)
 	// sayHi: () => void;
 	// sayHi: (a: number, b: number) => void;
 }
 
 // 타입별칭과의 차이점
-// 인터페이스에서는 유니온 타입과 인터섹션 타입을 만들 수 없다.
+// 인터페이스에서는 유니온 타입과 인터섹션 타입을 만들 수 없다
 
 type Type1 = number | string;
 type Type2 = number & string;

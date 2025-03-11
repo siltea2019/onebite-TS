@@ -62,7 +62,7 @@ class StudentDeveloper {
 	}
 
 	introduce() {
-		console.log(`안녕하세요. ${this.name}이라고 합니다.`);
+		console.log(`안녕하세요. ${this.name}이라고 합니다`);
 	}
 
 	programming() {
@@ -84,7 +84,7 @@ class StudentUniversity extends Student {
 	}
 
 	getMajor() {
-		console.log(`현재${this.major}에 재학중입니다.`);
+		console.log(`현재${this.major}에 재학중입니다`);
 	}
 }
 

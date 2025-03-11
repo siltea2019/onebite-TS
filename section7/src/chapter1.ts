@@ -24,5 +24,5 @@ let var2 = getLength('123456'); // 5
 
 let var3 = getLength({ length: 10 }); // 10
 
-// length 프로퍼티가 없기 때문에 오류가 발생한다.
+// length 프로퍼티가 없기 때문에 오류가 발생한다
 // let var4 = getLength(10)

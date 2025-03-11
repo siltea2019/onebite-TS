@@ -5,7 +5,7 @@ const promise = new Promise<number>((resolve, reject) => {
 		// 성공했을때
 		// resolve(20);
 		// 실패했을때
-		reject('~~~때문에 실패하였습니다.');
+		reject('~~~때문에 실패하였습니다');
 	}, 3000);
 });
 

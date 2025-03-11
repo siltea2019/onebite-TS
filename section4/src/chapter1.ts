@@ -7,7 +7,7 @@ const sub: Operation = (a, b) => a - b;
 const mutiple: Operation = (a, b) => a * b;
 const divide: Operation = (a, b) => a / b;
 
-// 호출 시그니쳐 (콜 시그니쳐)
+// 호출 시그니처 (콜 시그니처)
 type Operation2 = {
 	(a: number, b: number): number;
 };

@@ -7,7 +7,7 @@ let num5: number = Infinity;
 let num6: number = -Infinity;
 let num7: number = NaN;
 
-// string
+// string : 문자타입
 let str1: string = 'hello';
 let str2: string = 'hello';
 let str3: string = `hello`;

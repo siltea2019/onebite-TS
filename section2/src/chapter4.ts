@@ -26,7 +26,7 @@ let user2: User = {
 	location: '부산시',
 };
 
-// 인덱스 시그니쳐
+// 인덱스 시그니처
 type CountryCodes = {
 	[key: string]: string;
 };

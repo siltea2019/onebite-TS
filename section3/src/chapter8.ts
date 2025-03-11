@@ -21,38 +21,38 @@ type Guest = {
 
 type User = Admin | Member | Guest;
 
-// Admin -> {name}님 현재까지 {kickCount}명 강퇴했습니다.
-// Member -> {name}님 현재까지 {point}모았습니다.
-// Guest -> {name}님 현재까지 {visitCount}번 오셨습니다.
+// Admin -> {name}님 현재까지 {kickCount}명 강퇴했습니다
+// Member -> {name}님 현재까지 {point}모았습니다
+// Guest -> {name}님 현재까지 {visitCount}번 오셨습니다
 function login(user: User) {
 	// 직관적이지 않은 방법
 	if ('kickCount' in user) {
-		console.log(`${user.name}님 현재까지 ${user.kickCount}명 강퇴했습니다.`);
+		console.log(`${user.name}님 현재까지 ${user.kickCount}명 강퇴했습니다`);
 	} else if ('point' in user) {
-		console.log(`${user.name}님 현재까지 ${user.point}모았습니다.`);
+		console.log(`${user.name}님 현재까지 ${user.point}모았습니다`);
 	} else {
-		console.log(`${user.name}님 현재까지 ${user.visitCount}번 방문 하셨습니다.`);
+		console.log(`${user.name}님 현재까지 ${user.visitCount}번 방문 하셨습니다`);
 	}
 
 	// 개선방안 1: 각 type의 프로퍼티에 tag를 추가
 	if (user.tag === 'ADMIN') {
-		console.log(`${user.name}님 현재까지 ${user.kickCount}명 강퇴했습니다.`);
+		console.log(`${user.name}님 현재까지 ${user.kickCount}명 강퇴했습니다`);
 	} else if (user.tag === 'MEMBER') {
-		console.log(`${user.name}님 현재까지 ${user.point}모았습니다.`);
+		console.log(`${user.name}님 현재까지 ${user.point}모았습니다`);
 	} else {
-		console.log(`${user.name}님 현재까지 ${user.visitCount}번 방문 하셨습니다.`);
+		console.log(`${user.name}님 현재까지 ${user.visitCount}번 방문 하셨습니다`);
 	}
 
 	// 개선방안 2 : 스위치문으로 변경하여 tag를 직관적으로
 	switch (user.tag) {
 		case 'ADMIN':
-			console.log(`${user.name}님 현재까지 ${user.kickCount}명 강퇴했습니다.`);
+			console.log(`${user.name}님 현재까지 ${user.kickCount}명 강퇴했습니다`);
 			break;
 		case 'MEMBER':
-			console.log(`${user.name}님 현재까지 ${user.point}모았습니다.`);
+			console.log(`${user.name}님 현재까지 ${user.point}모았습니다`);
 			break;
 		case 'GUEST':
-			console.log(`${user.name}님 현재까지 ${user.visitCount}번 방문 하셨습니다.`);
+			console.log(`${user.name}님 현재까지 ${user.visitCount}번 방문 하셨습니다`);
 			break;
 	}
 }
@@ -84,7 +84,7 @@ type AsycTask = LoadingTask | FailedTask | SuccessTask;
 function processResult(task: AsycTask) {
 	switch (task.state) {
 		case 'LOADING':
-			console.log('데이터를 로딩중입니다.');
+			console.log('데이터를 로딩중입니다');
 			break;
 		case 'FAILED':
 			console.log(`에러 발생: ${task.error.massage}`);
@@ -102,7 +102,7 @@ const loading: AsycTask = {
 const failed: AsycTask = {
 	state: 'FAILED',
 	error: {
-		massage: '오류가 발생했습니다. 원인 코드: ~~~~',
+		massage: '오류가 발생했습니다 원인 코드: ~~~~',
 	},
 };
 

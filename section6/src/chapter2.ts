@@ -21,7 +21,7 @@ class Employee {
 
 class ExecutiveOfficer extends Employee {
 	// 생성자
-	// 생성자의 매개변수에서 접근제어자를 붙이게 되면 필드의 내용은 생략해도 된다.
+	// 생성자의 매개변수에서 접근제어자를 붙이게 되면 필드의 내용은 생략해도 된다
 	constructor(name: string, age: number, position: string, public officeNumber: number) {
 		super(name, age, position);
 		this.officeNumber = officeNumber;

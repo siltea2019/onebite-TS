@@ -34,7 +34,7 @@ type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
 // Pick<Post, 'tags' | 'content' | 'thumbnailURL''>>
 
 // Record
-// 객체 타입을 새롭게 정의할 때 인덱스 시그니쳐처럼 유연하지만 조금 더 제한적인 객체타입
+// 객체 타입을 새롭게 정의할 때 인덱스 시그니처처럼 유연하지만 조금 더 제한적인 객체타입
 
 type Thumbnail = Record<'large' | 'medium' | 'small', { url: string; size: string }>;
 

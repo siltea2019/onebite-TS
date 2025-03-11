@@ -49,6 +49,6 @@ const employeeC: Employee = {
 	age: 18,
 	position: 'Heroic Bandit',
 	work() {
-		console.log('의적 활동중입니다.');
+		console.log('의적 활동중입니다');
 	},
 };

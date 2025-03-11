@@ -7,7 +7,7 @@ type Person = {
 // value => number : toFixed
 // value => string : toupperCase
 // value => Date : getTime
-// value => Person : name은 age살 입니다.
+// value => Person : name은 age살 입니다
 function func(value: number | string | Date | null | Person) {
 	// 타입을 좁히기 전에는
 	// value => string | number 타입으로 추론이 됨
@@ -22,6 +22,6 @@ function func(value: number | string | Date | null | Person) {
 	} else if (value instanceof Date) {
 		console.log(value.getDate);
 	} else if (value && 'age' in value) {
-		console.log(`${value.name}은 ${value.age}살 입니다.`);
+		console.log(`${value.name}은 ${value.age}살 입니다`);
 	}
 }
